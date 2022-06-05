@@ -110,7 +110,6 @@ public record Gym(String name, Map<GymMember, Duration> subscriptions) {
             throw new RuntimeException(ex);
         }
     }
-
     private void writeMembers(BufferedWriter writer, Duration ofHours) {
         subscriptions.entrySet().stream()
                 .filter(entry ->
