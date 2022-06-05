@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ddf33b3-3b91-48a6-9a39-b0c45d6e446c" name="Changes" comment="session 3 homework">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/curscode/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/curscode/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/curscode/PersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/curscode/Range.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/curscode/Ranges.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex1/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex1/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Bird.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Canary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Chicken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Fly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Insect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Ladybug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex2/Parrot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex3/LogicalSwitch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session4/homework/ex3/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ro/fasttrackit/session4/curscode/RangesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session3/homework/ex2/Gym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/fasttrackit/session3/homework/ex2/Gym.java" afterDir="false" />
-    </list>
+    <list default="true" id="4ddf33b3-3b91-48a6-9a39-b0c45d6e446c" name="Changes" comment="session 4 homework" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +186,7 @@
       <workItem from="1654413374001" duration="25000" />
       <workItem from="1654413430398" duration="1037000" />
       <workItem from="1654414514147" duration="81000" />
-      <workItem from="1654414623982" duration="11025000" />
+      <workItem from="1654414623982" duration="11506000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1652560216843</created>
@@ -234,7 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653846494047</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="session 4 homework">
+      <created>1654427440352</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654427440352</updated>
+    </task>
+    <task id="LOCAL-00005" summary="session 4 homework">
+      <created>1654427514388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654427514388</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +243,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="session 3 homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="session 3 homework" />
+    <MESSAGE value="session 4 homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="session 4 homework" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
