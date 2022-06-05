@@ -5,12 +5,12 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 public record LogicalSwitch(Map<Predicate<Person>, Function<Person, String>> cases) {
-    public String testCases(Person person) {
-        for (Map.Entry<Predicate<Person>, Function<Person, String>> entry : cases.entrySet()) {
-            if (entry.getKey().test(person)) {
-                return entry.getValue().apply(person);
-            }
-        }
-        return "No match";
+    public String testCases(Person person, String defaultValue) {
+        return cases.entrySet().stream()
+                .filter(entry -> entry.getKey().test(person))
+                .findFirst()
+                .orElse(Map.entry(p -> true, p -> defaultValue))
+                .getValue()
+                .apply(person);
     }
 }

@@ -14,22 +14,10 @@ public class StudentService {
 
     private final List<Student> students;
 
-    private final List<String> courses = new ArrayList<>(List.of(
-            """
-                    {
-                        "course":"Math 101",
-                        "semester":2
-                    }""",
-            """
-                    {
-                        "course":"Math 102",
-                        "semester":2
-                    }""",
-            """
-                    {
-                        "course":"Math 103",
-                        "semester":2
-                    }"""
+    private final List<Course> courses = new ArrayList<>(List.of(
+            new Course("Java", 1),
+            new Course("JavaScript", 1),
+            new Course("C++", 2)
     ));
 
     public String getStudentNamesAndAverageGrades() {
@@ -37,17 +25,35 @@ public class StudentService {
                 .collect(
                         Collectors.teeing(
                                 mapping(Student::name, joining(", ")),
-                                averagingInt(Student::grade),
+                                averagingDouble(Student::grade),
                                 (names, averageGrade) -> String.format("%s have an average grade of %.2f", names, averageGrade)
                         )
                 );
     }
 
     public void randomlyAllocateCourseToStudent() {
-        students.forEach(student -> {
-            int randomIndex = new Random().nextInt(courses.size());
-            System.out.printf("%s will participate to course %s%n", student.name(), courses.get(randomIndex));
-        });
+        String studentsCourses = students.stream()
+                .collect(
+                        toMap(
+                                student -> student,
+                                student -> courses.get(new Random().nextInt(courses.size()))
+                        ))
+                .entrySet()
+                .stream()
+                .map(studentCourseEntry -> {
+                    Student student = studentCourseEntry.getKey();
+                    Course course = studentCourseEntry.getValue();
+                    return """
+                            %s is enrolled in
+                            {
+                                "course": "%s",
+                                "semester": %s
+                            }
+                            """.formatted(student.name(), course.name(), course.semester());
+                }).collect(
+                        Collectors.joining("\n")
+                );
+        System.out.println(studentsCourses);
     }
 
     public String getStudentGrade(Student student) {

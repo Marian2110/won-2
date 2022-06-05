@@ -8,12 +8,12 @@ import java.util.Random;
 
 public record Student(String name, LocalDate birthDate, int grade) {
 
-    public Student(long age) {
-        this("No Name", generateRandomBirthDate(age), 10);
+    public Student(String name, long age, int grade) {
+        this(name, generateRandomBirthDate(age), grade);
     }
 
     private static LocalDate generateRandomBirthDate(long age) {
-        int yearOfBirth = (int) (LocalDate.now().getYear() - age);
+        int yearOfBirth = LocalDate.now().minusYears(age).getYear();
         var randomMonth = Month.of(new Random().nextInt(1, 13));
         var randomDay = new Random().nextInt(1, randomMonth.maxLength() + 1);
         return LocalDate.of(yearOfBirth, randomMonth, randomDay);
